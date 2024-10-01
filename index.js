@@ -1,8 +1,11 @@
 const express = require("express");
 const app = express();
+
+//ROUTES
 const objectRoutes = require('./routes/objectRoutes');
 const imageRoutes = require('./routes/imageRoutes');
 const userRoutes = require('./routes/userRoutes');
+
 
 const connectDB = require('./config/db');
 

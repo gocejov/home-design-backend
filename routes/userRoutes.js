@@ -5,6 +5,6 @@ const userValidator = require('../validators/userValidator');
 const router = express.Router();
 
 router.get('/users', getUsers);
-router.post('/users', createUser);
+router.post('/users', userValidator ,createUser);
 
 module.exports = router;

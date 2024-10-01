@@ -1,5 +1,5 @@
 const Image = require("../models/imageModel")
-const logger = require('./utils/logger');
+const logger = require('../utils/logger');
 
 const createImage = async (req,res) => {
 	try {
