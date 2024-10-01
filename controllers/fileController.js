@@ -1,6 +1,6 @@
 const logger = require('../utils/logger');
 
-const fileUpload = (req, res) => {
+const singleFileUpload = (req, res) => {
 	if (!req.file) {
         logger.error("No file uploaded.")
         return res.status(400).send("No file uploaded.");
@@ -30,4 +30,4 @@ const multipleFilesUpload = (req, res) => {
     res.send('File uploaded and saved to memory!');
   }
 
-module.exports = {fileUpload, multipleFilesUpload, uploadFileInMemory}
+module.exports = {singleFileUpload, multipleFilesUpload, uploadFileInMemory}

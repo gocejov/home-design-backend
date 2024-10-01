@@ -39,4 +39,4 @@ const uploadFile = (memory = false)=>{
   });
 }
 
-module.exports = {uploadFile};
+module.exports = uploadFile;
