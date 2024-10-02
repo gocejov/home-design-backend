@@ -24,7 +24,11 @@ const objectSchema = new mongoose.Schema({
 	fixRotation: {
 		type: Number, // Image could be a URL or a base64 string
 		default: 0,
-	}
+	},
+    fill:{
+        type: String,
+        required: true
+    }
 });
 
 module.exports = mongoose.model("ObjectItem", objectSchema)
